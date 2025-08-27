@@ -13,7 +13,7 @@ const Stats = () => {
   useEffect(() => {
     const getStats = async () => {
       await getProgressStats()
-        .then((res) => {
+        .then((res) => { 
           // console.log(res.data);
           setStats(res.data);
         })
@@ -25,7 +25,7 @@ const Stats = () => {
         });
     };
     getStats();
-  }, []);
+  }, [navigate]);
 
   return (
     <>

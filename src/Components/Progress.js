@@ -43,7 +43,7 @@ const Progress = () => {
         });
     };
     getStudentProgress();
-  }, [update]);
+  }, [update, navigate]);
 
   return (
     <>

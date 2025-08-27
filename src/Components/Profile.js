@@ -1,4 +1,4 @@
-import { useEffect, useState , lazy, Suspense} from "react";
+import { useEffect, useState } from "react";
 import NavigationBar from "./NavigationBar";
 import { getStudent } from "../Services/ServiceCall";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +24,7 @@ const Profile = () => {
         });
     };
     getStudentProfile();
-  }, []);
+  }, [navigate]);
 
   return (
     <>
